@@ -7,6 +7,7 @@ server:
 # are preventing eureka to try to register it self
 # and generating errors on startup
 eureka:
+  server:    enable-self-preservation: false
   client:
     register-with-eureka: false
     fetch-registry: false
